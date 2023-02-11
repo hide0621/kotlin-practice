@@ -1,14 +1,13 @@
 fun main() {
-//    val num : Int = 10
-//    val num2 = 10L
-//    println(num2::class)
-//
-//    val num3 : Float = 1.0F
-//    println(num3::class)
-    val num : UByte = 128u
+    var x : Int = 10
+//    var y : Long = x
+    var y : Long = x.toLong()
 
-    var any : Any = 10
-    any = "hoge"
-    println(any::class)
+    var d : Double = x.toDouble()
+    println(d)
+
+    val dd = 1.6
+    val i : Int = dd.toInt()
+    println(i)
 
 }
