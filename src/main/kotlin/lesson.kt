@@ -1,14 +1,14 @@
 fun main() {
-    var num = 10
-    println("num = $num")
-    println(num::class)
+//    val num : Int = 10
+//    val num2 = 10L
+//    println(num2::class)
+//
+//    val num3 : Float = 1.0F
+//    println(num3::class)
+    val num : UByte = 128u
 
-    var str = "Hello"
-    println(str)
-    println(str::class)
+    var any : Any = 10
+    any = "hoge"
+    println(any::class)
 
-    num = 20
-    println("num = $num")
-
-    val x = 10
 }
