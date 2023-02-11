@@ -1,20 +1,12 @@
 fun main() {
-    var str : String? = null
-    println(str?:"".length)
+    val array : Array<Int> = arrayOf(10, 20, 30)
+//    println(array[0])
+//    array[0] = 100
+//    println(array[0])
+    array.forEach { println(it) } // ラムダ式
 
-    val list : MutableList<Int> = mutableListOf(10, 20, 30)
-    val num : Int? = list.min()
+    val array2 : IntArray = intArrayOf(10, 20)
 
-//    println(num * 2)
-
-//    val num2 : Int = num
-
-    // スマートキャスト
-    if (num != null) {
-        println(num * 2)
-    }
-
-    // !!
-    val num2 : Int = num!!
-    println(num2 * 2)
+    val array3: Array<String?> = arrayOfNulls<String>(5)
+    array3.forEach { println(it) } // ラムダ式
 }
