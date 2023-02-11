@@ -1,13 +1,20 @@
 fun main() {
-    var x : Int = 10
-//    var y : Long = x
-    var y : Long = x.toLong()
+    var str : String? = null
+    println(str?:"".length)
 
-    var d : Double = x.toDouble()
-    println(d)
+    val list : MutableList<Int> = mutableListOf(10, 20, 30)
+    val num : Int? = list.min()
 
-    val dd = 1.6
-    val i : Int = dd.toInt()
-    println(i)
+//    println(num * 2)
 
+//    val num2 : Int = num
+
+    // スマートキャスト
+    if (num != null) {
+        println(num * 2)
+    }
+
+    // !!
+    val num2 : Int = num!!
+    println(num2 * 2)
 }
