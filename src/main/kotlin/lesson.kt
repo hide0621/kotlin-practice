@@ -1,14 +1,14 @@
 fun main() {
-//    println(100)
-//    println("Hello")
-//
-//    print("Hello\nworld")
+    var num = 10
+    println("num = $num")
+    println(num::class)
 
-//    println(10 + 2)
-//    println(10 - 2)
-//    println(10 * 2)
-//    println(10 / 2)
-//    println(10 % 2)
+    var str = "Hello"
+    println(str)
+    println(str::class)
 
-    println("Hello" + "world")
+    num = 20
+    println("num = $num")
+
+    val x = 10
 }
