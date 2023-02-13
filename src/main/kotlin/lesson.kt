@@ -1,13 +1,20 @@
 fun main() {
 
-    val set: MutableSet<Int> = mutableSetOf(10, 20, 30)
+    val map: MutableMap<String, String> = mutableMapOf<String, String>(
+            "orange" to "オレンジ",
+            "melon" to "メロン",
+            "apple" to "アップル"
+    )
 
-    println(set)
+    println(map)
 
-    set.add(40)
-    println(set)
+    map["apple"] = "リンゴ"
+    println(map)
 
-    set.remove(30)
-    println(set)
+    map["banana"] = "バナナ"
+    println(map)
+
+    map.remove("apple")
+    println(map)
 
 }
