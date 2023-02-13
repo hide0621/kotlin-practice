@@ -1,24 +1,13 @@
 fun main() {
 
-    val list: MutableList<Int> = mutableListOf(10, 20, 30)
-    println(list[0])
+    val set: MutableSet<Int> = mutableSetOf(10, 20, 30)
 
-    list[0] = 100
+    println(set)
 
-    println(list[0])
+    set.add(40)
+    println(set)
 
-    println(list)
+    set.remove(30)
+    println(set)
 
-    list.add(200)
-    println(list)
-
-    // インデックス番号０に追加（上書きではない）
-    list.add(0, 500)
-    println(list)
-
-    list.removeAt(0)
-    println(list)
-
-    list.remove(100)
-    println(list)
 }
