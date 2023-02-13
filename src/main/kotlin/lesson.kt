@@ -1,20 +1,16 @@
 fun main() {
 
-    val map: MutableMap<String, String> = mutableMapOf<String, String>(
-            "orange" to "オレンジ",
-            "melon" to "メロン",
-            "apple" to "アップル"
-    )
+    // 範囲演算子の学習
 
-    println(map)
+    val n1: Int = 10
+    val n2: Int = 20
 
-    map["apple"] = "リンゴ"
-    println(map)
+    val array: Array<Int> = arrayOf(n1, n2)
 
-    map["banana"] = "バナナ"
-    println(map)
+    println(15 in n1..n2)
+    println(15 !in n1..n2)
+    println(5 !in array)
 
-    map.remove("apple")
-    println(map)
+    println("B" in "ABC")
 
 }
