@@ -1,29 +1,25 @@
+import kotlin.reflect.KFunction2
+
 fun main() {
-    val (sum, max, min) = sumMaxMin(20, 10, 50, 30, 40)
-    println("sum = $sum")
-    println("max = $max")
-    println("min = $min")
+//    val func: KFunction2<Int, Int, Int> = ::calcA
+//    println(func(10, 5))
+//    val n1 = calcB(5, 10, ::calcA)
+//    println("n1 = $n1")
 
-    val triple: Triple<Int, Int, Int> = sumMaxMin(20, 10, 50, 30, 40)
-    println("first = ${triple.first}")
-    println("second = ${triple.second}")
-    println("third = ${triple.third}")
+//    val n2 = calcB(5, 10, {x: Int, y: Int -> x + y})
+//    val n2 = calcB(5, 10){x: Int, y: Int -> x + y}
+//    println("n2 = $n2")
 
+//    val num = funcB(10, ::funcA)
+//    val num = funcB(10) { x: Int -> x + 1 }
+    val num = funcB(10){it + 1}
+    println(num)
 }
 
-fun sumMaxMin(vararg array: Int): Triple<Int, Int, Int> {
-    var sum = 0
-    var max = 0
-    var min = 0
+//fun calcA(a: Int, b: Int): Int = a + b
 
-    for(num in array) {
-        sum += num
-        if (max < num) {
-            max = num
-        }
-        if (min > num) {
-            min = num
-        }
-    }
-    return Triple(sum, max, min)
-}
+//fun calcB(a: Int, b: Int, func: (Int, Int) -> Int) = func(a, b)
+
+fun funcA(a: Int) = a + 1
+
+fun funcB(a: Int, func: (Int) -> Int) = func(a)
