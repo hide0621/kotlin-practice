@@ -1,16 +1,23 @@
 fun main() {
 
-    // 範囲演算子の学習
+    val num: Int = 49
 
-    val n1: Int = 10
-    val n2: Int = 20
+//    if (num > 100) {
+//        println("num > 100")
+//    } else if (num > 50) {
+//        println("num > 50")
+//    } else {
+//        println("その他")
+//    }
 
-    val array: Array<Int> = arrayOf(n1, n2)
+    val str: String = if (num > 100) {
+        "num > 100"
+    } else if (num > 50) {
+        "num > 50"
+    } else {
+        "その他"
+    }
 
-    println(15 in n1..n2)
-    println(15 !in n1..n2)
-    println(5 !in array)
-
-    println("B" in "ABC")
+    println("strは${str}です")
 
 }
