@@ -1,37 +1,21 @@
 fun main() {
 
-//    for(i in 0..10 ) {
-//        if (i == 5) {
-//            break
-//        }
-//        println(i)
-//    }
+//    val str = sayMessage("hoge")
+//    println(str)
 
-//    for(i in 0..10 ) {
-//        if (i%2 == 0) {
-//            continue
-//        }
-//        println(i)
-//    }
-
-//    for (i in 0..10) {
-//        for (j in 0..10) {
-//            if (j == 5) {
-//                break
-//            }
-//            print(j)
-//        }
-//        println()
-//    }
-
-    outer@for (i in 0..10) {
-        for (j in 0..10) {
-            if (j == 5) {
-                break@outer
-            }
-            print(j)
-        }
-        println()
-    }
-
+    val str = unionString("藤原", "秀之")
+    println(str)
 }
+
+//fun sayMessage(str: String): String {
+//    return "Message = $str"
+//}
+
+//fun unionString(str1: String, str2: String): String {
+//    return str1 + str2
+//}
+
+// 単一式関数（処理が一行のみの関数）
+//fun unionString(str1: String, str2: String): String = str1 + str2
+fun unionString(str1: String, str2: String) = str1 + str2
+
