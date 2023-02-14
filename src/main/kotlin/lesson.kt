@@ -1,15 +1,26 @@
 fun main() {
 
-    var i = 10
-    while (i < 10) {
-        println("i = $i")
-        i++
-    }
+//    for(i in 0..10) {
+//        println(i)
+//    }
 
-    var j = 10
-    do {
-        println("j = $j")
-        j++
-    } while (j < 10)
+//    for(i in 0 until  10) {
+//        println(i)
+//    }
+
+//    for(i in 10 downTo 0) {
+//        println(i)
+//    }
+
+//    for(i in 10 downTo 0 step 2) {
+//        println(i)
+//    }
+
+    for(i in 1..9) {
+        for(j in 1..9) {
+            print(i * j)
+        }
+        println()
+    }
 
 }
