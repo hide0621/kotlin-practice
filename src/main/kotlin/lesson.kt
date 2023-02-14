@@ -1,21 +1,18 @@
 fun main() {
+//    println(union(1, 2, 3, 4))
 
-//    val str = sayMessage("hoge")
-//    println(str)
-
-    val str = unionString("藤原", "秀之")
-    println(str)
+    var intArray = intArrayOf(1, 2, 3, 4)
+    // スプレッド演算子（*intArray）
+    println(union(1, 2, 3, 4))
 }
 
-//fun sayMessage(str: String): String {
-//    return "Message = $str"
-//}
+fun union(vararg array : Int): String {
 
-//fun unionString(str1: String, str2: String): String {
-//    return str1 + str2
-//}
+    var str = ""
+    for (num in array) {
+        str += num
+    }
 
-// 単一式関数（処理が一行のみの関数）
-//fun unionString(str1: String, str2: String): String = str1 + str2
-fun unionString(str1: String, str2: String) = str1 + str2
+    return str
+}
 
