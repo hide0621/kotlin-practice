@@ -1,6 +1,9 @@
 import kotlin.reflect.KFunction2
 
 fun main() {
+
+// ラムダ式の場合
+
 //    val func: KFunction2<Int, Int, Int> = ::calcA
 //    println(func(10, 5))
 //    val n1 = calcB(5, 10, ::calcA)
@@ -12,14 +15,19 @@ fun main() {
 
 //    val num = funcB(10, ::funcA)
 //    val num = funcB(10) { x: Int -> x + 1 }
-    val num = funcB(10){it + 1}
+//    val num = funcB(10){it + 1}
+//    println(num)
+
+//　無名関数の場合
+    val num = calcB(5, 10, fun (x: Int, y: Int):Int = x + y)
     println(num)
+
 }
 
 //fun calcA(a: Int, b: Int): Int = a + b
 
-//fun calcB(a: Int, b: Int, func: (Int, Int) -> Int) = func(a, b)
+fun calcB(a: Int, b: Int, func: (Int, Int) -> Int) = func(a, b)
 
-fun funcA(a: Int) = a + 1
-
-fun funcB(a: Int, func: (Int) -> Int) = func(a)
+//fun funcA(a: Int) = a + 1
+//
+//fun funcB(a: Int, func: (Int) -> Int) = func(a)
