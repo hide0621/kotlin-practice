@@ -1,15 +1,14 @@
 package model
 
-class Player(name: String, hp: Int, var atk: Int)
+class Player(name: String, hp: Int, private var atk: Int)
     : Character(name, hp) {
 
         fun attack() {
             println("${name}の攻撃！${atk}のダメージ！")
         }
 
-        override fun showStatus() {
-            println("名前:${name}")
-            println("HP:${hp}")
+        public override fun showStatus() {
+            super.showStatus()
             println("攻撃力:${atk}")
         }
 }

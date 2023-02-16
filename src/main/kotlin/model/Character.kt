@@ -1,6 +1,9 @@
 package model
 
-abstract class Character(val name: String = "藤原", val hp: Int){
+open class Character(val name: String = "藤原", val hp: Int){
 
-    abstract fun showStatus()
+    protected open fun showStatus() {
+        println("名前:${name}")
+        println("HP:${hp}")
+    }
 }
