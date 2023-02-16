@@ -17,5 +17,6 @@ fun main() {
     AppInfo.name = "ZZ GAME"
     AppInfo.display()
 
+    println(KotlinVersion.CURRENT) // これでkotlinのバージョンを確認できる
 }
 
