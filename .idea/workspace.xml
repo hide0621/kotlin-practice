@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a696b62a-ab0a-4279-86b8-64e0e470cfd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/model/Enemy.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Character.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Player.kt" afterDir="false" />
     </list>

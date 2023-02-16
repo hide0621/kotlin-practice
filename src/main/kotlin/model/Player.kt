@@ -8,7 +8,8 @@ class Player(name: String, hp: Int, var atk: Int)
         }
 
         override fun showStatus() {
-            super.showStatus()
+            println("名前:${name}")
+            println("HP:${hp}")
             println("攻撃力:${atk}")
         }
 }
