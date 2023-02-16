@@ -7,7 +7,11 @@ class Player(name: String, hp: Int, private var atk: Int, override var heal: Int
             println("${name}の攻撃！${atk}のダメージ！")
         }
 
-        public override fun showStatus() {
+//        public override fun showStatus() {
+//            super.showStatus()
+//            println("攻撃力:${atk}")
+//        }
+        override fun showStatus() {
             super.showStatus()
             println("攻撃力:${atk}")
         }

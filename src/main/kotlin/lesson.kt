@@ -6,11 +6,26 @@ fun main() {
 
     val p = Player("プレイヤー", 100, 10, 10)
 
-    p.showStatus()
+    // アップキャスト
+    val ch: Character = p
+//    ch.showStatus()
+//    ch.attack()
 
-    p.healing()
+    // ダウンキャスト
+    val player: Player = ch as Player
+//    player.attack()
 
-    p.showStatus()
+    // ダウンキャスの失敗例（ClassCastException）
+//    val c = Character("藤原", 100)
+//    val player1: Player = c as Player
+    // 次の処理は失敗する
+//    player1.attack()
+
+    //　スマートキャスト
+    if (ch is Player) {
+        ch.attack()
+//        val pp: Player =ch
+    }
 
 }
 
