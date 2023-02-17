@@ -9,8 +9,12 @@ fun main() {
 //    val int = Generics<Int>(100)
 //    int.display()
 
-    val p: Generics<Player> =
-        Generics(Player("プレイヤー", 100, 10, 10))
+//    val p: Generics<Player> =
+//        Generics(Player("プレイヤー", 100, 10, 10))
+//    p.display()
+
+    val p: Generics<Character> =
+        Generics(Character("プレイヤー", 100))
     p.display()
 
 
