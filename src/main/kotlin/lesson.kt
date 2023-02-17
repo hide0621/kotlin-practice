@@ -1,21 +1,18 @@
-import model.AppInfo
+import model.*
 import model.Character
-import model.Enemy
-import model.Player
 import model.Character as ch
 fun main() {
 
-    val e1 = Enemy("敵1", 100, 10)
-    Enemy.showCount()
+    val outer = Outer(10)
+    outer.display()
+    println()
 
-//    e1.showCount()
+    outer.innerCreate(20)
+    outer.obj.display()
+    println()
 
-    val e2 = Enemy("敵2", 100, 10)
-    Enemy.showCount()
-
-    val e3 = Enemy("敵3", 100, 10)
-    Enemy.showCount()
-
+    val innerObj = outer.innerCreateReturn(30)
+    innerObj.display()
 
 
 }
