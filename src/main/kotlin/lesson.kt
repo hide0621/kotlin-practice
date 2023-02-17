@@ -3,20 +3,16 @@ import model.Character
 import model.Character as ch
 fun main() {
 
-//    val str: Generics<String> = Generics<String>("ABC")
-//    str.display()
-//
-//    val int = Generics<Int>(100)
-//    int.display()
+//    val numList: List<Int> = listOf<Int>(1,2,3,4,5)
+//    val x = getMiddle<Int>(numList)
+//    println(x)
 
-//    val p: Generics<Player> =
-//        Generics(Player("プレイヤー", 100, 10, 10))
-//    p.display()
+    val strList = listOf<String>("1","2" ,"3", "4", "5")
+    println(getMiddle<String>(strList))
 
-    val p: Generics<Character> =
-        Generics(Character("プレイヤー", 100))
-    p.display()
+}
 
-
+fun <T>getMiddle(list: List<T>): T{
+    return list[list.size / 2]
 }
 
