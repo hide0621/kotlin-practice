@@ -3,24 +3,15 @@ import model.Character
 import model.Character as ch
 fun main() {
 
-    val day: Week = Week.Sunday
-    println(day.value)
-    println(day.ordinal)
+//    class C: Status(){}
 
-    if (day == Week.Sunday) {
-        println(true)
-    }
+    var status = StatusTest.Enabled
+    status = StatusTest.Disabled
+    status = StatusTest.Error
 
-    when(day) {
-        Week.Sunday -> println(true)
-        else -> {
-            println("ほげ〜")
-        }
-    }
-
-    for (week in Week.values()) {
-        println("$week = ${week.value}")
-    }
+    var s: Status = Status.Enable
+    s = Status.Disable
+    s = Status.Error("Error: 001")
 
 }
 
