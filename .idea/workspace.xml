@@ -7,6 +7,8 @@
     <list default="true" id="a696b62a-ab0a-4279-86b8-64e0e470cfd1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/lesson.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lesson.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/AppInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/AppInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/Enemy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/Enemy.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

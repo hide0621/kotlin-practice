@@ -5,18 +5,18 @@ import model.Player
 import model.Character as ch
 fun main() {
 
-//    val weakPlayer = object : Player("モブ", 10, 1,1) {
-//        override fun attack() {
-//            println("失敗！！")
-//        }
-//    }
-//    weakPlayer.attack()
+    val e1 = Enemy("敵1", 100, 10)
+    Enemy.showCount()
 
-    AppInfo.display()
+//    e1.showCount()
 
-    AppInfo.name = "ZZ GAME"
-    AppInfo.display()
+    val e2 = Enemy("敵2", 100, 10)
+    Enemy.showCount()
 
-    println(KotlinVersion.CURRENT) // これでkotlinのバージョンを確認できる
+    val e3 = Enemy("敵3", 100, 10)
+    Enemy.showCount()
+
+
+
 }
 
