@@ -3,17 +3,24 @@ import model.Character
 import model.Character as ch
 fun main() {
 
-    val outer = Outer(10)
-    outer.display()
-    println()
+    val day: Week = Week.Sunday
+    println(day.value)
+    println(day.ordinal)
 
-    outer.innerCreate(20)
-    outer.obj.display()
-    println()
+    if (day == Week.Sunday) {
+        println(true)
+    }
 
-    val innerObj = outer.innerCreateReturn(30)
-    innerObj.display()
+    when(day) {
+        Week.Sunday -> println(true)
+        else -> {
+            println("ほげ〜")
+        }
+    }
 
+    for (week in Week.values()) {
+        println("$week = ${week.value}")
+    }
 
 }
 
