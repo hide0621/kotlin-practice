@@ -3,30 +3,16 @@ import model.Character
 import model.Character as ch
 fun main() {
 
-    val f1 = Fruits("りんご", 100)
-    val f2 = Fruits("りんご", 100)
-
-    f1.area = "青森"
-    f2.area = "長崎"
-
-//    println(f1)
-//    println(f1.area)
-//    println(f2.area)
+//    val str: Generics<String> = Generics<String>("ABC")
+//    str.display()
 //
-//    println(f1 == f2)
+//    val int = Generics<Int>(100)
+//    int.display()
 
-//    val f3 = f1.copy(price = 200)
-//    println(f3)
+    val p: Generics<Player> =
+        Generics(Player("プレイヤー", 100, 10, 10))
+    p.display()
 
-//    val name = f1.component1()
-//    println(name)
-//
-//    val price = f1.component2()
-//    println(price)
-
-    val(name, price) = f1
-    println(name)
-    println(price)
 
 }
 
